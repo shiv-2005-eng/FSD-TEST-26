@@ -1,0 +1,15 @@
+{
+  "name": "online-test-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal early-2000s intranet-style Online Test System",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "seed": "npm --prefix server run seed",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
